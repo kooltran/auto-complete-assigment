@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/kiet-autocomplete-assignment/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/kiet-autocomplete-assignment/static/js/main.1ad21ac9.chunk.js",
+    "main.js.map": "/kiet-autocomplete-assignment/static/js/main.1ad21ac9.chunk.js.map",
+    "runtime-main.js": "/kiet-autocomplete-assignment/static/js/runtime-main.c7a8c1c4.js",
+    "runtime-main.js.map": "/kiet-autocomplete-assignment/static/js/runtime-main.c7a8c1c4.js.map",
+    "static/css/2.4c6ee7a4.chunk.css": "/kiet-autocomplete-assignment/static/css/2.4c6ee7a4.chunk.css",
+    "static/js/2.f2f7e792.chunk.js": "/kiet-autocomplete-assignment/static/js/2.f2f7e792.chunk.js",
+    "static/js/2.f2f7e792.chunk.js.map": "/kiet-autocomplete-assignment/static/js/2.f2f7e792.chunk.js.map",
+    "index.html": "/kiet-autocomplete-assignment/index.html",
+    "precache-manifest.50ea837be8df166c3cedb8aa3c036af6.js": "/kiet-autocomplete-assignment/precache-manifest.50ea837be8df166c3cedb8aa3c036af6.js",
+    "service-worker.js": "/kiet-autocomplete-assignment/service-worker.js",
+    "static/css/2.4c6ee7a4.chunk.css.map": "/kiet-autocomplete-assignment/static/css/2.4c6ee7a4.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/kiet-autocomplete-assignment/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.f2f7e792.chunk.js.LICENSE.txt": "/kiet-autocomplete-assignment/static/js/2.f2f7e792.chunk.js.LICENSE.txt",
+    "static/media/day.jpg": "/kiet-autocomplete-assignment/static/media/day.7bb1a2fa.jpg",
+    "static/media/moon.6f1f85f3.svg": "/kiet-autocomplete-assignment/static/media/moon.6f1f85f3.svg",
+    "static/media/night.jpg": "/kiet-autocomplete-assignment/static/media/night.0aee7d6d.jpg",
+    "static/media/sun.aa59b8a4.svg": "/kiet-autocomplete-assignment/static/media/sun.aa59b8a4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7a8c1c4.js",
+    "static/css/2.4c6ee7a4.chunk.css",
+    "static/js/2.f2f7e792.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.1ad21ac9.chunk.js"
+  ]
+}
