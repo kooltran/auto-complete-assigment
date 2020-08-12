@@ -1,24 +1,24 @@
-import React, { createContext, useState, useContext, useCallback } from "react";
+import React, { createContext, useState, useContext, useCallback } from 'react'
 
-const ThemeContext = createContext();
+const ThemeContext = createContext()
 
 export const ThemeProvider = ({ children }) => {
-  const [mode, toggleDark] = useState(true);
+  const [mode, toggleDark] = useState('light')
 
   return (
     <ThemeContext.Provider value={{ mode, toggleDark }}>
       {children}
     </ThemeContext.Provider>
-  );
-};
+  )
+}
 
 export const useThemeContext = () => {
-  const { mode: isLightMode, toggleDark } = useContext(ThemeContext);
+  const { mode, toggleDark } = useContext(ThemeContext)
 
-  const toggleThemeMode = useCallback(() => toggleDark(!isLightMode), [
-    isLightMode,
-    toggleDark
-  ]);
+  const toggleThemeMode = useCallback(
+    () => toggleDark(mode === 'light' ? 'dart' : 'light'),
+    [mode, toggleDark]
+  )
 
-  return [isLightMode, toggleThemeMode];
-};
+  return [mode, toggleThemeMode]
+}

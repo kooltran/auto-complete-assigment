@@ -1,9 +1,17 @@
-import React from "react";
-import Layout from "./layout";
-import styled from "styled-components";
-import MyAutoComplete from "./components/autoComplete/autoComplete";
+import React from 'react'
+import Layout from './layout'
+import styled from 'styled-components'
+import MyAutoComplete from './components/autoComplete/autoComplete'
+import {
+  Link,
+  BrowserRouter as Router,
+  Route,
+  useParams,
+  Switch
+} from 'react-router-dom'
+import Name from './components/Name'
 
-import { ThemeProvider } from "./provider/themeProvider";
+import { ThemeProvider } from './provider/themeProvider'
 
 const StyledAutoCompleteContainer = styled.div`
   display: flex;
@@ -14,11 +22,11 @@ const StyledAutoCompleteContainer = styled.div`
     height: 100%;
     align-items: center;
   }
-`;
+`
 
 export default function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <ThemeProvider>
         <Layout>
           <StyledAutoCompleteContainer>
@@ -26,6 +34,12 @@ export default function App() {
           </StyledAutoCompleteContainer>
         </Layout>
       </ThemeProvider>
+
+      <Router>
+        <Link to={{ pathname: 'name', state: { age: 27 } }}>Name</Link>
+
+        <Route path='/name' component={Name} />
+      </Router>
     </div>
-  );
+  )
 }

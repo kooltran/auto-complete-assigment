@@ -1,10 +1,9 @@
-import LightBackground from "../assets/img/day.jpg";
+import LightBackground from '../assets/img/day.jpg'
 
 const lightTheme = {
-  background: "white",
-  textNav: "white",
+  background: 'white',
+  textNav: 'white',
   backgroundImg: LightBackground,
-  navBg: "#89b9aa"
-};
+}
 
-export default lightTheme;
+export default lightTheme

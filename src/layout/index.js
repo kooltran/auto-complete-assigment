@@ -1,21 +1,22 @@
-import React from "react";
-import Header from "./Header";
-import Layout from "./Layout";
-import GlobalTheme from "../theme/globalTheme";
+import React from 'react'
+import Header from './Header'
+import Layout from './Layout'
+import GlobalTheme from '../theme/globalTheme'
 
-import { useThemeContext } from "../provider/themeProvider";
+import { useThemeContext } from '../provider/themeProvider'
 
 const AppLayout = ({ children }) => {
-  const [lightMode] = useThemeContext();
+  const [mode] = useThemeContext()
+
   return (
     <>
-      <GlobalTheme light={lightMode} />
+      <GlobalTheme mode={mode} />
       <Layout>
         <Header />
         {children}
       </Layout>
     </>
-  );
-};
+  )
+}
 
-export default AppLayout;
+export default AppLayout
