@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from './layout'
 import styled from 'styled-components'
 import MyAutoComplete from './components/autoComplete/autoComplete'
@@ -7,7 +7,7 @@ import {
   BrowserRouter as Router,
   Route,
   useParams,
-  Switch
+  Switch,
 } from 'react-router-dom'
 import Name from './components/Name'
 
@@ -25,8 +25,11 @@ const StyledAutoCompleteContainer = styled.div`
 `
 
 export default function App() {
+  useEffect(() => {
+    console.log('didmount')
+  }, [])
   return (
-    <div className='App'>
+    <div className="App">
       <ThemeProvider>
         <Layout>
           <StyledAutoCompleteContainer>
@@ -38,7 +41,7 @@ export default function App() {
       <Router>
         <Link to={{ pathname: 'name', state: { age: 27 } }}>Name</Link>
 
-        <Route path='/name' component={Name} />
+        <Route path="/name" component={Name} />
       </Router>
     </div>
   )

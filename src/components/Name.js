@@ -1,10 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-class Name extends React.Component {
-  render() {
-    console.log(this.props.location)
-    return <h1>Name</h1>
-  }
+const Name = () => {
+  const [name, setName] = useState('kool')
+  return <h1>{name}</h1>
 }
 
 export default Name
